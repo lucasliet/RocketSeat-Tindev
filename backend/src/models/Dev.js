@@ -21,7 +21,11 @@ const DevSchema = new Schema({
 	dislikes: [{
 		type: Schema.Types.ObjectId,
 		ref: 'Dev',
-	}],
+    }],
+    url: {
+        type: String,
+        required: true,
+    }
 }, {
     timestamps: true,
 });
